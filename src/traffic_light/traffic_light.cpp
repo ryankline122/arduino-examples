@@ -21,7 +21,7 @@ void toggle_LED(int pin, int time) {
 }
 
 void traffic_loop() {
-    toggle_LED(RED, 3000);
-    toggle_LED(YELLOW, 3000);
     toggle_LED(GREEN, 3000);
+    toggle_LED(YELLOW, 3000);
+    toggle_LED(RED, 3000);
 }

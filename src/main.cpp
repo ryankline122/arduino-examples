@@ -1,14 +1,14 @@
 #include <Arduino.h>
 #include "traffic_light/traffic_light.hpp"
-
-#define RED 13
-#define YELLOW 12
-#define GREEN 8 
+#include "servo/servo.hpp"
 
 void setup() {
-  setup_traffic_LED(RED, YELLOW, GREEN);
+  // setup_traffic_LED(RED, YELLOW, GREEN);
+  setup_servo();
+  Serial.begin(115200);
 }
 
 void loop() {
-  traffic_loop();
+  // traffic_loop();
+  servo_read();
 }
